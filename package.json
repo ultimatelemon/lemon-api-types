@@ -1,6 +1,6 @@
 {
   "name": "@ultimatelemon-dev/lemon-api-types",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "REST types for all UltimateLemon API services.",
   "scripts": {
     "build": "tsc --noEmit && tsup",
@@ -24,10 +24,10 @@
       "require": "./dist/core.js",
       "import": "./dist/core.mjs"
     },
-    "./utils": {
-      "types": "./dist/utils.d.ts",
-      "require": "./dist/utils.js",
-      "import": "./dist/utils.mjs"
+    "./auth": {
+      "types": "./dist/auth.d.ts",
+      "require": "./dist/auth.js",
+      "import": "./dist/auth.mjs"
     }
   },
   "files": [
