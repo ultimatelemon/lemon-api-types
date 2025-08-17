@@ -29,5 +29,5 @@ export default defineConfig({
   sourcemap: true,
   esbuildPlugins: [esbuildPluginVersionInjector()],
   treeshake: false,
-  outDir: 'build'
+  outDir: 'dist'
 });

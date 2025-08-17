@@ -5,7 +5,7 @@ node_modules/
 .env
 
 # Production
-build/
+dist/
 
 # Miscellaneous
 .vscode/

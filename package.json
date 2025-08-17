@@ -10,28 +10,28 @@
   },
   "exports": {
     ".": {
-      "types": "./build/index.d.ts",
-      "require": "./build/index.js",
-      "import": "./build/index.mjs"
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
     },
     "./routes": {
-      "types": "./build/routes.d.ts",
-      "require": "./build/routes.js",
-      "import": "./build/routes.mjs"
+      "types": "./dist/routes.d.ts",
+      "require": "./dist/routes.js",
+      "import": "./dist/routes.mjs"
     },
     "./core": {
-      "types": "./build/core.d.ts",
-      "require": "./build/core.js",
-      "import": "./build/core.mjs"
+      "types": "./dist/core.d.ts",
+      "require": "./dist/core.js",
+      "import": "./dist/core.mjs"
     },
     "./utils": {
-      "types": "./build/utils.d.ts",
-      "require": "./build/utils.js",
-      "import": "./build/utils.mjs"
+      "types": "./dist/utils.d.ts",
+      "require": "./dist/utils.js",
+      "import": "./dist/utils.mjs"
     }
   },
   "files": [
-    "build"
+    "dist"
   ],
   "directories": {
     "lib": "src"
