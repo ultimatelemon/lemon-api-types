@@ -19,7 +19,11 @@ jobs:
         with:
           node-version: 22.16.0
 
-      - run: yarn build
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Build Package
+        run: yarn build
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
