@@ -1,0 +1,35 @@
+name: Testing Codebase
+
+on:
+  push:
+    branches:
+      - next
+      - stable
+    paths:
+      - src/**
+      - package.json
+      - tsup.config.*
+      - tsconfig.json
+      - .github/workflows/*
+
+jobs:
+  testing:
+    name: Quality Checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.16.0
+
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Build NPM Package
+        run: yarn build
+
+      - name: Run formatting checks
+        uses: UltimateLemon/shared-actions/node/quality-check@main
+        with:
+          format: true

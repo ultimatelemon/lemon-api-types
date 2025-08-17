@@ -1,0 +1,67 @@
+{
+  "name": "@ultimatelemoneu/lemon-api-types",
+  "version": "1.0.0",
+  "description": "REST types for all UltimateLemon API services.",
+  "scripts": {
+    "build": "tsc --noEmit && tsup",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint ."
+  },
+  "exports": {
+    ".": {
+      "types": "./build/index.d.ts",
+      "require": "./build/index.js",
+      "import": "./build/index.mjs"
+    },
+    "./routes": {
+      "types": "./build/routes.d.ts",
+      "require": "./build/routes.js",
+      "import": "./build/routes.mjs"
+    },
+    "./core": {
+      "types": "./build/core.d.ts",
+      "require": "./build/core.js",
+      "import": "./build/core.mjs"
+    },
+    "./utils": {
+      "types": "./build/utils.d.ts",
+      "require": "./build/utils.js",
+      "import": "./build/utils.mjs"
+    }
+  },
+  "files": [
+    "build"
+  ],
+  "directories": {
+    "lib": "src"
+  },
+  "keywords": [
+    "ultimatelemon",
+    "lemon-api",
+    "types",
+    "typescript",
+    "rest"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ultimatelemon/lemon-api-types.git"
+  },
+  "author": {
+    "name": "UltimateLemon",
+    "url": "https://github.com/ultimatelemon"
+  },
+  "license": "LGPL-3.0-only",
+  "devDependencies": {
+    "@eslint/js": "^9.33.0",
+    "esbuild-plugin-version-injector": "^1.2.1",
+    "eslint": "^9.33.0",
+    "globals": "^16.3.0",
+    "jiti": "^2.5.1",
+    "prettier": "^3.6.2",
+    "tslib": "^2.8.1",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.39.1"
+  }
+}
